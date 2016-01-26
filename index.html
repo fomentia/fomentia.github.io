@@ -9,26 +9,40 @@
     <title>The Bleating of the Lambs</title>
   </head>
   <body class="light-body">
-    <h1 class="light-h1">The Bleating of the Lambs</h1>
+    <h1 class="light-h1">The Black Cat</h1>
 
-    <button id="toggle-dark-theme">Dark Theme</button>
+    <button class="activate-dark-theme theme-button">Dark Theme</button>
 
-    <p class="light-p">There was once a man, named Jemima. A weird name for a man, everyone said - well, everyone except for Foosh. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="light-p">For the most wild, yet most homely narrative which I am about to pen, I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence. Yet, mad am I not - and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul. My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified - have tortured - have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror - to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place - some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects.</p>
+
+    <p class="light-p">From my infancy I was noted for the docility and humanity of my disposition. My tenderness of heart was even so conspicuous as to make me the jest of my companions. I was especially fond of animals, and was indulged by my parents with a great variety of pets. With these I spent most of my time, and never was so happy as when feeding and caressing them. This peculiarity of character grew with my growth, and in my manhood, I derived from it one of my principal sources of pleasure. To those who have cherished an affection for a faithful and sagacious dog, I need hardly be at the trouble of explaining the nature or the intensity of the gratification thus derivable. There is something in the unselfish and self-sacrificing love of a brute, which goes directly to the heart of him who has had frequent occasion to test the paltry friendship and gossamer fidelity of mere Man.</p>
+
+    <p class="light-p">I married early, and was happy to find in my wife a disposition not uncongenial with my own. Observing my partiality for domestic pets, she lost no opportunity of procuring those of the most agreeable kind. We had birds, gold-fish, a fine dog, rabbits, a small monkey, and a cat.</p>
+
+    <p class="light-p">This latter was a remarkably large and beautiful animal, entirely black, and sagacious to an astonishing degree. In speaking of his intelligence, my wife, who at heart was not a little tinctured with superstition, made frequent allusion to the ancient popular notion, which regarded all black cats as witches in disguise. Not that she was ever serious upon this point - and I mention the matter at all for no better reason than that it happens, just now, to be remembered.</p>
+
+    <p class="light-p">Pluto - this was the cat's name - was my favorite pet and playmate. I alone fed him, and he attended me wherever I went about the house. It was even with difficulty that I could prevent him from following me through the streets.</p>
+
+    <p class="light-p">Our friendship lasted, in this manner, for several years, during which my general temperament and character - through the instrumentality of the Fiend Intemperance - had (I blush to confess it) experienced a radical alteration for the worse. I grew, day by day, more moody, more irritable, more regardless of the feelings of others. I suffered myself to use intemperate language to my wife. At length, I even offered her personal violence. My pets, of course, were made to feel the change in my disposition. I not only neglected, but ill-used them. For Pluto, however, I still retained sufficient regard to restrain me from maltreating him, as I made no scruple of maltreating the rabbits, the monkey, or even the dog, when by accident, or through affection, they came in my way. But my disease grew upon me - for what disease is like Alcohol! - and at length even Pluto, who was now becoming old, and consequently somewhat peevish - even Pluto began to experience the effects of my ill temper.</p>
+
+    <p class="light-p">One night, returning home, much intoxicated, from one of my haunts about town, I fancied that the cat avoided my presence. I seized him; when, in his fright at my violence, he inflicted a slight wound upon my hand with his teeth. The fury of a demon instantly possessed me. I knew myself no longer. My original soul seemed, at once, to take its flight from my body and a more than fiendish malevolence, gin-nurtured, thrilled every fibre of my frame. I took from my waistcoat-pocket a pen-knife, opened it, grasped the poor beast by the throat, and deliberately cut one of its eyes from the socket! I blush, I burn, I shudder, while I pen the damnable atrocity.</p>
   </body>
 
   <script type="text/javascript">
     $(document).ready(function() {
-      $("#toggle-dark-theme").click(function() {
+      $(".theme-button").click(function() {
         if($("body").attr("class") == "light-body") {
           $("body").switchClass("light-body", "dark-body", 800);
           $("h1").switchClass("light-h1", "dark-h1", 800);
           $("p").switchClass("light-p", "dark-p", 800);
-          $("#toggle-dark-theme").html("Light Theme");
+          $(".activate-dark-theme").html("Light Theme");
+          $("button").switchClass("activate-dark-theme", "activate-light-theme", 800);
         } else if($("body").attr("class") == "dark-body") {
           $("body").switchClass("dark-body", "light-body", 800);
           $("h1").switchClass("dark-h1", "light-h1", 800);
           $("p").switchClass("dark-p", "light-p", 800);
-          $("#toggle-dark-theme").html("Dark Theme");
+          $(".activate-light-theme").html("Dark Theme");
+          $("button").switchClass("activate-light-theme", "activate-dark-theme", 800);
         }
       });
     });
