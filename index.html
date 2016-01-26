@@ -2,9 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sup</title>
+    <link id="css-link" rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery-2.2.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+    <title>The Bleating of the Lambs</title>
   </head>
-  <body>
-    <h1>Sup mah homies</h1>
+  <body class="light-body">
+    <h1 class="light-h1">The Bleating of the Lambs</h1>
+
+    <button id="toggle-dark-theme">Dark Theme</button>
+
+    <p class="light-p">There was once a man, named Jemima. A weird name for a man, everyone said - well, everyone except for Foosh. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </body>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#toggle-dark-theme").click(function() {
+        if($("body").attr("class") == "light-body") {
+          $("body").switchClass("light-body", "dark-body", 800);
+          $("h1").switchClass("light-h1", "dark-h1", 800);
+          $("p").switchClass("light-p", "dark-p", 800);
+          $("#toggle-dark-theme").html("Light Theme");
+        } else if($("body").attr("class") == "dark-body") {
+          $("body").switchClass("dark-body", "light-body", 800);
+          $("h1").switchClass("dark-h1", "light-h1", 800);
+          $("p").switchClass("dark-p", "light-p", 800);
+          $("#toggle-dark-theme").html("Dark Theme");
+        }
+      });
+    });
+  </script>
 </html>

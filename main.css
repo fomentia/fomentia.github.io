@@ -1,0 +1,32 @@
+.light-body {
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Helvetica Neue";
+}
+
+.light-h1 {
+  font-weight: 300;
+}
+
+.light-p {
+  font-weight: 200;
+  line-height: 150%;
+}
+
+.dark-body {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #191919;
+  font-family: "Helvetica Neue";
+}
+
+.dark-h1 {
+  font-weight: 300;
+  color: #D0D0D0;
+}
+
+.dark-p {
+  font-weight: 200;
+  line-height: 150%;
+  color: #D0D0D0;
+}
