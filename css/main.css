@@ -1,52 +1,59 @@
-.light-body {
-  margin: 0 auto;
-  width: 70%;
-  font-family: "Helvetica Neue";
+body {
+    margin: 0 auto;
+    width: 70%;
+    font-family: "Avenir Next";
+    overflow-x: hidden;
 }
 
-.light-h1 {
-  font-weight: 300;
+h1 {
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
 }
 
-.light-p {
-  font-weight: 200;
-  line-height: 150%;
+#wrapper {
+    position: relative;
 }
 
-.theme-button {
-  position: fixed;
-  top: 22px;
-  right: 10px;
-  border-radius: 7px;
-  border: none;
-  padding: 10px 10px 10px 10px;
-  font-size: 15px;
+#wrapper #header {
+    height: 125px;
 }
 
-.activate-dark-theme {
-  background-color: #191919;
-  color: white;
+#header {
+    margin: 0 -9999rem;
+    padding: 0 9999rem;
+    background-color: #2A986C;
 }
 
-.activate-light-theme {
-  background-color: white;
-  color: black;
+#nav {
+    margin: 0 -9999rem;
+    padding: 8px 9999rem 8px 9999rem;
+    background-color: #DF7C3E;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    position: absolute;
+    bottom: 0px;
 }
 
-.dark-body {
-  margin: 0 auto;
-  width: 70%;
-  background-color: #191919;
-  font-family: "Helvetica Neue";
+.nav-link {
+    font-size: 14pt;
+    display: table-cell;
+    text-align: center;
 }
 
-.dark-h1 {
-  font-weight: 300;
-  color: #D0D0D0;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.dark-p {
-  font-weight: 200;
-  line-height: 150%;
-  color: #D0D0D0;
+a:hover {
+    color: #994008;
+}
+
+p {
+    font-weight: normal;
+    font-size: 14pt;
 }
