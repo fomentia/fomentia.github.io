@@ -10,19 +10,18 @@ h1 {
     font-size: 30pt;
     padding-top: 20px;
     margin-bottom: 20px;
-    color: white;
     text-align: center;
 }
 
-#wrapper {
+#header {
     position: relative;
 }
 
-#wrapper #header {
+#header #name {
     height: auto;
 }
 
-#header {
+#name {
     margin: 0 -9999rem;
     padding: 0 9999rem;
     background-color: #2A986C;
@@ -30,8 +29,6 @@ h1 {
 }
 
 #fomentia {
-    display: inline-block;
-    zoom: 1;
     height: auto;
     width: 100%;
     padding: 10px 0 50px 0;
@@ -75,6 +72,7 @@ p {
     padding: 10px 20px 10px 0px;
 }
 
+
 #social {
     margin: 0 -9999rem;
     padding: 0px 9999rem 40px 9999rem;
@@ -91,4 +89,34 @@ p {
 #social-logos img {
     display: inline-block;
     padding: 10px 20px;
+}
+
+#testimonials {
+    margin: 0 -9999rem;
+    padding: 0px 9999rem 40px 9999rem;
+
+}
+
+#testimonials-table {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+#testimonials-row {
+    display: table-row;
+}
+
+.testimonial {
+    display: table-cell;
+    padding: 20px;
+    width: 50%;
+}
+
+.black-h1 {
+    color: black;
+}
+
+.white-h1 {
+    color: #FFFFFF;
 }
