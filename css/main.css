@@ -7,8 +7,9 @@ body {
 
 h1 {
     font-weight: normal;
+    font-size: 30pt;
     padding-top: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     color: white;
     text-align: center;
 }
@@ -18,13 +19,22 @@ h1 {
 }
 
 #wrapper #header {
-    height: 125px;
+    height: auto;
 }
 
 #header {
     margin: 0 -9999rem;
     padding: 0 9999rem;
     background-color: #2A986C;
+    text-align: center;
+}
+
+#fomentia {
+    display: inline-block;
+    zoom: 1;
+    height: auto;
+    width: 100%;
+    padding: 10px 0 50px 0;
 }
 
 #nav {
@@ -56,4 +66,29 @@ a:hover {
 p {
     font-weight: normal;
     font-size: 14pt;
+    text-align: justify;
+}
+
+#profile-picture {
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px 10px 0px;
+}
+
+#social {
+    margin: 0 -9999rem;
+    padding: 0px 9999rem 40px 9999rem;
+    background-color: #2A986C;
+}
+
+#social-logos {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+
+#social-logos img {
+    display: inline-block;
+    padding: 10px 20px;
 }
